@@ -1,0 +1,24 @@
+{
+  "name": "rider-777",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "generate-multi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hicruben/rider-777-brazil-research.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hicruben/rider-777-brazil-research/issues"
+  },
+  "homepage": "https://github.com/Hicruben/rider-777-brazil-research#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Rider 777 Brasil",
+  "short_name": "Rider 777",
+  "description": "Guia completo e análise imparcial do Rider 777 Brasil",
+  "start_url": "/rider-777.html",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
