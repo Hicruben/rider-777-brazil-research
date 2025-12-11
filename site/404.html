@@ -12,19 +12,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        .error-page {
-            min-height: 100vh;
+        .error-content {
+            min-height: calc(100vh - 200px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            padding: calc(70px + var(--spacing-3xl)) var(--spacing-lg) var(--spacing-3xl);
         }
 
         .error-code {
@@ -36,47 +40,41 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             line-height: 1;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
+            margin-bottom: var(--spacing-md);
         }
 
         .error-title {
             font-size: clamp(1.5rem, 4vw, 2.5rem);
             color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            font-weight: var(--font-weight-bold);
         }
 
         .error-message {
-            font-size: 1.125rem;
+            font-size: var(--text-lg);
             color: var(--text-secondary);
             max-width: 500px;
-            margin-bottom: 2rem;
-            line-height: 1.6;
+            margin-bottom: var(--spacing-xl);
+            line-height: var(--line-height-relaxed);
         }
 
         .error-actions {
             display: flex;
-            gap: 1rem;
+            gap: var(--spacing-md);
             flex-wrap: wrap;
             justify-content: center;
-        }
-
-        .error-logo {
-            width: 150px;
-            margin-bottom: 2rem;
+            margin-bottom: var(--spacing-3xl);
         }
 
         .error-links {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
+            padding-top: var(--spacing-xl);
+            border-top: var(--border-width-thin) solid var(--color-primary-10);
         }
 
         .error-links h3 {
             color: var(--text-primary);
-            margin-bottom: 1rem;
-            font-size: 1.125rem;
+            margin-bottom: var(--spacing-md);
+            font-size: var(--text-lg);
         }
 
         .error-links ul {
@@ -84,13 +82,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1.5rem;
+            gap: var(--spacing-lg);
         }
 
         .error-links a {
             color: var(--color-primary);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color var(--transition-fast);
         }
 
         .error-links a:hover {
@@ -99,9 +97,36 @@
     </style>
 </head>
 <body>
-    <main class="error-page">
-        <img src="images/logo-200.png" alt="Rider 777 Logo" class="error-logo" loading="lazy">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="rider-777.html" class="logo">
+                    <img src="images/logo-200.png" alt="Rider 777 Logo" width="40" height="40">
+                    <span class="logo-text">RIDER <span>777</span></span>
+                </a>
 
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="rider-777.html" class="nav-link">Início</a></li>
+                        <li><a href="rider-777-jogos.html" class="nav-link">Jogos</a></li>
+                        <li><a href="rider-777-bonus.html" class="nav-link">Bônus</a></li>
+                        <li><a href="rider-777-pix-deposito-saque.html" class="nav-link">PIX</a></li>
+                        <li><a href="rider-777-e-confiavel.html" class="nav-link">Confiável?</a></li>
+                        <li><a href="rider-777-perguntas-frequentes.html" class="nav-link">FAQ</a></li>
+                    </ul>
+                    <a href="https://betjjj999.com?ch=55699" class="btn btn-primary" target="_blank" rel="nofollow noopener">Acessar</a>
+                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="error-content">
         <div class="error-code">404</div>
 
         <h1 class="error-title">Página Não Encontrada</h1>
@@ -115,7 +140,7 @@
             <a href="rider-777.html" class="btn btn-primary">
                 Voltar à Página Inicial
             </a>
-            <a href="https://betjjj999.com?ch=55699" class="btn btn-cta" target="_blank" rel="noopener">
+            <a href="https://betjjj999.com?ch=55699" class="cta-btn" target="_blank" rel="nofollow noopener">
                 Acessar Rider 777
             </a>
         </div>
@@ -131,5 +156,63 @@
             </ul>
         </nav>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="rider-777.html" class="logo">
+                        <img src="images/logo-200.png" alt="Rider 777 Logo" width="40" height="40">
+                        <span class="logo-text">RIDER <span>777</span></span>
+                    </a>
+                    <p>Guia completo e análise imparcial do Rider 777 Brasil. Informações atualizadas sobre jogos, bônus, pagamentos e segurança.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Guias</h4>
+                    <nav class="footer-links">
+                        <a href="rider-777.html" class="footer-link">Avaliação Completa</a>
+                        <a href="rider-777-e-confiavel.html" class="footer-link">É Confiável?</a>
+                        <a href="rider-777-cadastro.html" class="footer-link">Cadastro</a>
+                        <a href="rider-777-bonus.html" class="footer-link">Bônus</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Recursos</h4>
+                    <nav class="footer-links">
+                        <a href="rider-777-pix-deposito-saque.html" class="footer-link">PIX</a>
+                        <a href="rider-777-jogos.html" class="footer-link">Jogos</a>
+                        <a href="rider-777-fortune-tiger.html" class="footer-link">Fortune Tiger</a>
+                        <a href="rider-777-apostas-esportivas.html" class="footer-link">Apostas</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Suporte</h4>
+                    <nav class="footer-links">
+                        <a href="rider-777-app.html" class="footer-link">App Mobile</a>
+                        <a href="rider-777-perguntas-frequentes.html" class="footer-link">FAQ</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Rider 777 Brasil. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <span>Jogo responsável</span>
+                    <span>+18</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="age-restriction">
+            <p>Este conteúdo é destinado apenas a maiores de 18 anos. Jogue com responsabilidade.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
